@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>Weather Detector </title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Weather Detector</h1>
+    </nav>
+    <section class="main-section">
+        <div class="search-box">
+            <form action="#" method="post">
+                {% csrf_token %}
+                <button type="submit">Search</button>
+                <input type="text" name="city" id="search" placeholder="Search">
+            </form>
+        </div>
+    </section>
+    <section class="second-section">
+        <div class="text-items">
+            <h1>Country Code : {{country_code}}</h1>
+            <p>Coordinate : {{coordinate}}</p>
+            <p>Temp : {{temp}}</p>
+            <p>Pressure : {{pressure}}</p>
+            <p>Humidity : {{humidity}}</p>
+        </div>
+    </section>
+</body>
+</html>

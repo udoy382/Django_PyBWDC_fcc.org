@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Now</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #242424;
+        }
+        h3{
+            color: red;
+            padding: 10px;
+            text-align: center;
+        }
+        form{
+            text-align: center;
+            align-items: center;
+        }
+        input{
+            padding: 3px 10px;
+            margin: 5px;
+        }
+        button{
+            padding: 3px 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Now</h1>
+    {% for message in messages %}
+    <h3>{{message}}</h3>
+    {% endfor %}
+
+    <form action="login", method="post">
+        {% csrf_token %}
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Username"><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Password"><br>
+        <button type="submit">Login</button>
+
+    </form>
+</body>
+</html>

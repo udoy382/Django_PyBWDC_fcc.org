@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #242424;
+    color: #fff;
+}
+
+
+.section .heading{
+    text-align: center;
+    background-color: #312f2f;
+    height: 8rem;
+    width: 40rem;
+    margin-left: 30%;
+}
+
+
+.heading h2{
+    padding: 2.5rem;
+}
+
+
+.chat-fild{
+    text-align: center;
+    background-color: #312f2f;
+    height: 10rem;
+    width: 36rem;
+    margin-left: 30%;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.chat-fild input{
+    padding: 5px 20rem 5px 0;
+    margin: .5rem;
+    border-radius: 5px;
+}
+
+.chat-fild button{
+    padding: 8px 13rem;
+    color: #fff;
+    background-color: rgb(21, 119, 21);
+    border: none;
+    margin-top: .5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chat-fild button:hover{
+    background-color: rgb(20, 148, 20);
+}

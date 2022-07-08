@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #242424;
+}
+
+
+.navbar{
+    height: 4rem;
+    background-color: #363434;
+}
+
+.navbar h1{
+    text-align: center;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+
+.main-section .search-box{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+
+.search-box button{
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.search-box input{
+    padding: 5px 25rem 5px 0;
+    border-radius: 3px;
+}
+
+
+.second-section .text-items{
+    color: #fff;
+    padding-left: 32rem;
+    padding-top: 3rem;
+    line-height: 1.5rem;
+}

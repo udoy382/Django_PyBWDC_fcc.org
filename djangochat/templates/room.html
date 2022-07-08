@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/room.css'%}">
+    <title>Django Chat</title>
+</head>
+<body>
+    <div class="section">
+        <div class="heading">
+            <h2>Django Chat</h2>
+        </div>
+        <div class="chat-fild">
+            <form action="checkview" method="post">
+                <label for="roomname">Room Name</label><br>
+                <input type="text" name="roomname" id="roomname" placeholder="Enter Room Name"><br>
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username" placeholder="Enter Your Username"><br>
+                <button type="submit">Enter Room</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

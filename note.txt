@@ -1,0 +1,7 @@
+Python Backend Web Development Course (with Django) => freeCodeCamp.org
+
+We learn in this course ~
+
+- Python basic to Advance
+- Django basic to Advance ( Backend )
+
